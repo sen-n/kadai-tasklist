@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
       if @user.save
         flash[:success] = 'ユーザを登録しました。'  
-        redirect_to tasks_url
+        redirect_to root_url
       else
         flash[:danger] = "ユーザの登録に失敗しました。"
         render :new
