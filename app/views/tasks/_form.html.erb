@@ -9,11 +9,14 @@
     </div>
   <% end %>
   
-  <%= f.label :status, 'ステータス' %>
+  <%= f.label :company, '応募企業' %>
+  <%= f.text_field :company %>
+  
+  <%= f.label :status, '選考状況' %>
   <%= f.text_field :status %>
   
-  <%= f.label :content, 'タスク' %>
-  <%= f.text_field :content %>
+  <%= f.label :other, '備考' %>
+  <%= f.text_field :other %>
   
-  <%= f.submit '作成' %>
+  <%= f.submit '登録' %>
 <% end %>

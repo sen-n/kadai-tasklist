@@ -5,7 +5,7 @@
 
   <ul>
     <% @tasks.each do |task| %>
-      <li><%= link_to task.id, task %> : <%= task.status %> &gt; <%= task.content %></li> 
+      <li><%= link_to task.id, task %> :<%= l task.created_at, format: :short %> &gt; <%= task.company %> &gt; <%= task.status %> &gt; <%= task.other %></li> 
     <% end %>  
   </ul>
 
